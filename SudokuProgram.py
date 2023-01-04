@@ -5,6 +5,26 @@
                                                     # START LOCATION:
                                                     # SAN DIEGO, CALIFORNIA
 
+# Information about the program 
+# 
+# Sudoku solver implements a backtracking algorithm to finish the program
+# Program also scans the current graph to determine if there are any squares
+# that can be immediately filled in. This improves the runtime.
+# 
+# Data Structures used
+# 
+# Box object used to keep track of each row, column and box
+# Since each of these need to have the numbers 1-9 uniquely in all of them
+# Inside the box object stores each numbers in a list 
+#
+# Graph Object 
+#
+# Contains a list of Box objects for each row, column and 'box' 
+# There are 10 items in each list with the first being none so that
+# it is not zero indexing but indexing from one.
+# Graph also contains a matrix that stores a 2D representation of each
+# sudoku 
+
 
 class Box:
     
